@@ -1,0 +1,4 @@
+注册表系统环境变量
+	计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
+注册表用户环境变量
+	计算机\HKEY_CURRENT_USER\Environment

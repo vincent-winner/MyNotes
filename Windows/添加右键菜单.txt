@@ -1,0 +1,11 @@
+1.打开注册表编辑器regedit.exe
+2.打开HKEY_CLASSES_ROOT\Directory\Background\shell路径
+3.新建"项"并随意命名
+3.点击上一步新建的项
+4.将右侧名称为默认,类型为REG_SZ的数据更改成右键菜单要显示的名字
+5.新建REG_SZ(字符串)类型的值,命名为Icon,更改数据为图标路径(省略这部无图标)
+6.新建项并命名为command
+7.将右侧名为默认，类型为REG_SZ的数据改成要执行的命令
+8.关闭注册表
+如果右键菜单没有出现新加项,用cmd.exe执行以下命令后重新查看右键菜单
+taskkill /f /im explorer.exe && start %windir%\explorer.exe

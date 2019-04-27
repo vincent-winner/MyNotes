@@ -1,0 +1,4 @@
+1.删除以下注册表项：
+	- 计算机\HKEY_CLASSES_ROOT\.[扩展名]
+	- 计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.[扩展名]
+2.重启Windows资源管理器

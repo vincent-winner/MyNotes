@@ -1,0 +1,5 @@
+管理员身份执行:
+	- 开启管理员用户:
+		net user Administrator /active:yes
+	- 关闭管理员用户:
+		net user Administrator /active:no

@@ -1,0 +1,7 @@
+1.解决因DNS污染而无法访问的域名
+	- 开启火狐浏览器的DoH功能
+		* DoH(DNS over HTTPS)是一种从浏览器出发的新的DNS协议，可以加密DNS请求
+		* 火狐浏览器地址栏输入about:config打开设置界面
+		* 搜索network.trr
+		* 将network.trr.mode更改成2(启用DoH,如果无效则更改成默认方式)
+		* 在浏览器地址输入域名打开时，域名前一定注意添加"https://"否则可能无法使用DoH功能。

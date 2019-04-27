@@ -1,0 +1,8 @@
+编辑maven安装目录/conf/settings.xml
+在上述文件的<mirrors>节点当中添加以下<mirror>子节点
+<mirror>  
+	<id>nexus-aliyun</id>  
+	<mirrorOf>central</mirrorOf>    
+	<name>Nexus aliyun</name>  
+	<url>http://maven.aliyun.com/nexus/content/groups/public</url>  
+</mirror>

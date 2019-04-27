@@ -1,0 +1,4 @@
+1.打开注册表编辑器regedit.exe
+2.进入以下路径
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion
+3.右边的ProgramFilesDir和ProgramFilesDir（x86）分别是64位和32位软件的默认安装路径

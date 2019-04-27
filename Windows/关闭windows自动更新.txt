@@ -1,0 +1,15 @@
+关闭windows更新服务
+
+	- 方法1(适合手动操作)
+		* 打开services.msc
+		* 找到Windows Update服务
+		* 停止该服务
+		* 将启用类型改为禁用
+		* 在"恢复"选项卡中将第一次失败、第二次失败、后续失败改成无操作
+		* 点击应用并确定
+
+	- 方法2(适合程序操作)
+		* 将cmd.exe以管理员身份运行
+		* 输入sc stop wuauserv
+		* 输入sc config wuauserv start= disabled
+		* 下次开机时将生效

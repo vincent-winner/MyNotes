@@ -1,0 +1,2 @@
+* 向上转型(upcasting) 自动类型转换
+* 向下转型(downcasting) 强制类型转换

